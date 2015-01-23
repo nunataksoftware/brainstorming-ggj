@@ -203,6 +203,7 @@ body {
 #sponsors {
     margin:0 auto;
     text-align:center;
+    height: auto;
 }
 
 #sponsors img{
