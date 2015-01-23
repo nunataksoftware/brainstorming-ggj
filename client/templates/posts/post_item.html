@@ -1,0 +1,11 @@
+<template name="postItem">
+    <div class="post">
+        <div class="post-content">
+            <h3>{{title}}</h3>
+            <section>{{#markdown}}{{descripcion}}{{/markdown}}</section>
+            <p> enviado por {{author}}
+                {{#if ownPost }}<a href="{{pathFor 'postEdit'}}">Editar</a>{{/if}}
+            </p>
+        </div>
+    </div>
+</template>

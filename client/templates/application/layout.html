@@ -1,0 +1,29 @@
+<template name="layout">
+    <div class="container">
+        {{> header}}
+        {{> errors}}
+        {{> messages}}
+        <div id="main" class="row-fluid">
+          {{> yield}}
+        </div>
+        <footer>
+                
+
+          <div id="sponsors" class="featurette">
+                <a href="http://www.adva.com.ar/" target="_blank"><img src="img/sponsors/ADVA-Mendoza.png" alt="ADVA Mendoza" title="ADVA Mendoza" /></a>
+                <a href="http://globalgamejam.org/" target="_blank"><img src="img/sponsors/ggj.jpg" alt="Global Game Jam" title="Global Game Jam" /></a>
+
+                <!--a href="https://www.facebook.com/pages/Global-Game-Jam-Argentina/329623527068459" target="_blank"><img src="img/sponsors/ggj-argentina.jpg" alt="Global Game Jam Argentina" title="Global Game Jam Argentina" /></a-->
+                <a href="http://www.nunataksoftware.com/" target="_blank"><img src="img/sponsors/nunatak.png" alt="Nunatak Software" title="Nunatak Software" /></a>
+                <a href="http://www.espacioleparc.com/" target="_blank"><img src="img/sponsors/Le_Parc.jpg" alt="Espacio Julio Le Parc" title="Espacio Julio Le Parc" /></a>
+                <a href="http://espacioleparc.com/industrias-creativas" target="_blank"><img src="img/sponsors/industrias.jpg" alt="Dirección de Industrias Creativas" title="Dirección de Industrias Creativas" /></a>
+                <a href="http://www.escaad.com.ar/" target="_blank"><img src="img/sponsors/logoescaad256.fw.png" alt="ESCAAD" title="ESCAAD" /></a>
+                <a href="http://wimi5.com/" target="_blank"><img src="img/sponsors/Wimi5_W_256x256.png" alt="WIMI5" title="WIMI5" /></a>
+                <a href="http://www.cineclubstocco.blogspot.com.ar/" target="_blank"><img src="img/sponsors/cineclub_stocco.jpg" alt="Cineclub Stocco" title="Cineclub Stocco" /></a>
+                <a href="http://coinding.com/" target="_blank"><img src="img/sponsors/coinding.jpg" alt="Coinding" title="Coinding" /></a>
+                <a href="http://nippona-comics.blogspot.com.ar/" target="_blank"><img src="img/sponsors/nippona_256px.gif" alt="Nippona Comics" title="Nippona Comics" /></a>
+          </div>
+
+        </footer>
+    </div>
+</template>

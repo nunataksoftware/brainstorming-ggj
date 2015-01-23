@@ -1,0 +1,22 @@
+<template name="postEdit">
+  <form class="main form">
+    <div class="form-group {{errorClass 'title'}}">
+      <label class="control-label" for="title">Nombre</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="{{title}}" placeholder="Nombre del juego" class="form-control"/>
+          <span class="help-block">{{errorMessage 'title'}}</span>
+      </div>
+    </div>
+    <div class="form-group {{errorClass 'descripcion'}}">
+      <label class="control-label" for="descripcion">Descripción</label>
+      <div class="controls">
+          <textarea name="descripcion" id="descripcion" placeholder="Detalle del juego" class="form-control" rows="8">{{descripcion}}</textarea>
+          <!--input name="descripcion" id="descripcion" type="text" value="{{descripcion}}" placeholder="Descripción" class="form-control"/-->
+          <span class="help-block">{{errorMessage 'descripcion'}}</span>
+      </div>
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-primary submit"/>
+    <hr/>
+    <a class="btn btn-danger delete" href="#">Borrar juego</a>
+  </form>
+</template>
